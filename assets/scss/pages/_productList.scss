@@ -1,0 +1,32 @@
+/* 產品列表 */
+/* 左側欄位 */
+.category .active{
+  color: var(--primary-400);
+}
+
+.category li:not(:first-child) a:hover {
+  color: var(--neutral-0);
+  background-color: var(--primary-400);
+  border-radius: 3px;
+}
+
+/* 右側產品列表 */
+.imgGroup .col-4:hover {
+  border: 3px solid var(--neutral-900);
+}
+
+/* 分頁 */
+.page-item .btn {
+  padding: 8px 15px;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+.page-item .active,
+.page-item:not(:first-child):hover {
+  background-color: var(--primary-300);
+  font-weight: 500;
+}
+
+
+
