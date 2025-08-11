@@ -1,0 +1,110 @@
+/* 產品欄位 */
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+}
+
+.product-col {
+    width: calc(100% / 12 * 6);
+    padding: 0 4px;
+}
+
+@media (max-width: 767px) {
+    .product-row {
+        margin: 0 -12px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .product-col {
+        width: 100%;
+        flex-shrink: 0;
+        padding: 0;
+    }
+}
+
+/* 產品介紹 */
+.price {
+    color: $primary-400;
+    display: flex;
+    align-items: center;
+}
+
+.price-sub {
+    color: $neutral-500;
+    margin-left: 8px;
+}
+
+/* 顏色 */
+.color-choose {
+    width: 64px;
+    text-align: center;
+    color: $neutral-600;
+}
+
+/* 尺寸 */
+.btn-product-size {
+    border: 1px solid $neutral-300;
+    width: 160px;
+}
+
+@media (max-width: 767px) {
+    .btn-product-size {
+        width: calc( (100% / 4 * 2) - 8px);
+    }
+}
+
+.btn-product-size.active,
+.btn-product-size:not(:disabled):hover {
+    border-color: $neutral-900;
+}
+
+.btn-product-size:nth-child(n + 8) {
+    pointer-events: none;
+}
+
+.size-text {
+    color: $danger-300;
+}
+
+/* 收藏 / 試穿 */
+.btn-wrapper .btn {
+    width: 50%;
+}
+
+.btn-wrapper .bi {
+    padding-right: 8px;
+}
+
+.btn-icon .bi {
+    padding-right: 0;
+}
+
+@media (max-width: 767px) {
+    .btn-wrapper .btn {
+        width: 100%;
+    }
+}
+/* 其他說明 */
+.info-note {
+    color: $neutral-600;
+}
+
+.info-underline {
+    border-bottom: 1px solid $neutral-300;
+}
+
+.row-mayLike .product-card {
+    flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+    .row-mayLike{
+       margin: 0;
+        & .product-card {
+        width: 300px; 
+        padding-right: 12px;
+    }
+}
+    }
+

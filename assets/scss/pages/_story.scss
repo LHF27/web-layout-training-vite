@@ -1,0 +1,102 @@
+/* header */
+.header {
+  background-image: url("/assets/images/品牌故事geader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 152px 0;
+  color: $neutral-white;
+}
+
+.main span {
+   display: block;
+   margin-top: 16px;
+}
+
+@media(max-width: 567px) {
+  .header {
+    padding: 87px 0;
+    background-image: url("../../images/品牌故事sm.png");
+  }
+}
+
+/* main */
+.section-underline {
+  border-bottom: 1px solid $neutral-300;
+}
+
+/* 引用 */
+.quote {
+  background-color: $primary-100;
+  border-radius: 12px;
+}
+
+.quote .h5{
+  color: $primary-400;
+}
+
+@media(max-width:567px) {
+  .quote {
+      text-align:left;
+  }
+}
+
+/* 品牌簡介 */
+.introduction-img {
+  margin-right: -110px;
+  margin-left: -110px;
+}
+
+@media(max-width:1000px) {
+  .introduction-img{
+   margin-right:auto;
+   margin-left:auto; 
+  }
+}
+
+.introduction .h5 {
+  color: $primary-400;
+}
+
+/* 品牌歷程 */
+.brand-history-dots {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+.brand-history-line {
+  padding-left: 8px;
+  border-left: 1px solid $neutral-900;
+}
+
+/* 品牌理念 */
+.concept-line {
+  padding-left: 12px;
+  border-left: 3px solid $neutral-300;
+}
+
+/* 品牌小故事 */
+.bi {
+  vertical-align: bottom;
+}
+
+.story-style {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: $primary-400;
+}
+
+.story-style:hover {
+  display: inline-block;
+  transform: scale(1.5);
+  transform-origin:left;
+  background-color: $primary-400;
+  color: $neutral-white;
+  text-decoration: none;
+}
+
+/* footer */
+.footer {
+  background-color: $neutral-100;
+  color: $neutral-600;
+}
